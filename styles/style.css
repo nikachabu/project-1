@@ -26,7 +26,7 @@ ul {
     align-items: center;
 }
 .home:hover{
-    background-color: #FF2288;
+   background-color:  #FF2288;
 }
 
 
@@ -115,24 +115,32 @@ ul {
 .go-pro h2{
     font-size: 14px;
     align-items: center;
-    color: #FF2288;
+    color:#111111;
     margin-right: 35px;
+}
+.go-pro h2:hover{
+    color: #FF2288;
 }
 
 .upload{
     width: 130px;
     height: 55px;
     border-radius: 12px;
-    background-color: #FF2288;
     display: flex;
     justify-content:center;
     align-items: center;
     
 }
+.upload:hover{
+    background-color: #FF2288;
+    color: #F2F2F2;
+}
+
+
 
 .upload h2{
     text-align: center;
-    color: #FFFFFF;
+    color:#111111;
 }
 .filter{
     display: flex;
@@ -185,6 +193,7 @@ ul {
     height: 56px;
     background-color: #F2F2F2;
     align-items: center;
+    border-radius: 12px;
 } 
 .filter-img p{
     font-size: 16px;
@@ -192,7 +201,7 @@ ul {
     
 }
 .filter-img img{
-    margin-left: 24px;
+    margin-right: 24px;
     width: 24px;
     height: 24px;
     
@@ -210,6 +219,29 @@ ul {
     height: auto;
     
 }
+.hover-img{
+    position: relative;
+}
+.div-hover{
+    position:absolute;
+    top: 20px;
+    left: 30px;
+    display: none;
+}
+.heart-hover{
+    position: absolute;
+    left: 30px;
+    top: 45px;
+    display: none;
+}
+.hover-img:hover .div-hover{
+    display: flex
+}
+.hover-img:hover .heart-hover{
+    display: flex;
+}
+
+
 .dark{
     max-width: 1230px;
     width: 100%;
@@ -236,15 +268,6 @@ ul {
     margin-top: 86px;
     
 }
-/* .h2-border{
-    display: flex;
-    max-width: 289px;
-    width: 100%;
-    height: 52px;
-    font-size: 18px;
-    color: #484646;
-} */
-
 .view-designers{
     max-width: 1231px;
     width: 100%;
@@ -283,8 +306,6 @@ ul {
 .follow-box{
     max-width: 100%;
     height: auto;
-    /* width: 124px;
-    height: 44px; */
     border-radius: 12px;
     background-color: #F2F2F2;
     display: flex;
@@ -355,7 +376,7 @@ ul {
 }
 .section-table{
     max-width: 1291px;
-    width: 100%;
+    width:100%;
     margin: 0 auto;
     margin-top: 100px;
     
@@ -387,7 +408,7 @@ ul {
     max-width: 1920px;
     width: 100%;
     display: grid;
-    grid-template-columns: 15% 80%;
+    grid-template-columns: 15% 85%;
     align-items: center;
     gap: 20px ;
     grid-template-areas:
@@ -416,6 +437,9 @@ ul {
 @media screen and (max-width: 1024px){
    .div-container{
     width: 820px;
+   }
+   .div-container{
+    grid-template-columns: 20% 80%;
    }
 }
 
